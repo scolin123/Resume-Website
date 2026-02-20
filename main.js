@@ -18,6 +18,7 @@ homeBtn.addEventListener('click',(e) => {
     e.preventDefault();
 
 
+
     mainContent.classList.remove('splash-reveal');
     document.body.classList.remove('allow-scroll');
     welcomeScreen.style.display = 'flex';
