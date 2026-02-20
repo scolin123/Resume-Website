@@ -199,13 +199,14 @@ a:hover:before{
     scroll-margin-top:0 ;
 }
 
-#experience{
-    margin-bottom: 300px;
+#projects{
+    margin-bottom: 600px;
 }
 
-#projects{
-    margin-bottom: 500px;
+#experience{
+    margin-bottom: 600px;
 }
+
 #connect{
     
     min-height: 20vh;
@@ -214,6 +215,7 @@ a:hover:before{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 400px;
 }
 
 html{
