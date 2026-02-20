@@ -15,20 +15,20 @@
     
 
     <section id="WelcomeScreen">
-        <h1>Welcome to Colin's Website</h1>
+        <div id="particles-js"></div>
+            <h1>Welcome to Colin's Website</h1>
 
-        <div class="button-container">
-            <button class="StartButton" type="button">Get Started!</button>
+            <div class="button-container">
+                <button class="StartButton" type="button">Get Started!</button>
 
-            
-        </div>
+                
+            </div>
 
-    
-    
+            <div class="Credits">
+                <h3>Made by Colin</h3>
+            </div>
 
-        <div class="Credits">
-            <h3>Made by Colin</h3>
-        </div>
+        
     </section>
 
     
@@ -42,7 +42,7 @@
 
         <header>
         <nav class="top-nav">
-            <a href="#home" id="homeBtn">Home</a>
+            <a id="homeBtn">Home</a>
             <a href="#AboutMe">About Me</a>
             <a href="#projects">Projects</a>
             <a href="#experience">Experience</a>
@@ -53,18 +53,29 @@
         <section id="AboutMe" class="page-section">
             <h2>About me</h2>
 
-            <p class="intro-text">
-            Hi, my name is Colin! I’m a creator at heart with a deep interest in 
-            software development and digital innovation. I’m currently focused on 
-            building out my portfolio and expanding my professional network. Feel free 
-            to check out my latest code on GitLab or reach out if you'd like to collaborate!</p>
+            <div class="about-container">
+                <img src="profilePhoto.jpg" alt="Colin's Portrait" class="profile-photo">
 
-            <p class="personal-text">
-            When I’m not at my desk coding, you can usually find me on the diamond. As a 
-                baseball player, I love the strategy and competition of the game. Off the field, 
-                I stay active by biking, working out, or hitting the slopes for some skiing and snowboarding.
-                 I’m also a big believer in staying sharp mentally, whether that’s through reading a new 
-                 book or spending quality time with my family.</p>
+                <div class="about-text">
+                <p class="intro-text">
+                Hi, my name is Colin! I’m a creator at heart with a deep interest in 
+                software development and digital innovation. I’m currently focused on 
+                building out my portfolio and expanding my professional network. Feel free 
+                to check out my latest code on GitLab or reach out if you'd like to collaborate!
+                </p>
+
+                <p class="personal-text">
+                    When I’m not at my desk coding, you can usually find me on the diamond. As a 
+                    baseball player, I love the strategy and competition of the game. Off the field, 
+                    I stay active by biking, working out, or hitting the slopes for some skiing and snowboarding.
+                    I’m also a big believer in staying sharp mentally, whether that’s through reading a new 
+                    book or spending quality time with my family.
+                </p>
+
+                </div>
+
+            </div>
+            
         </section>
 
         
@@ -112,6 +123,7 @@
         </div>
     </section>
 
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src = "main.js"></script>
 </body>
 
