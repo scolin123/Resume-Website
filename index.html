@@ -35,7 +35,7 @@
 
     <section id="MainContent">
 
-        <video autoplay muted loop playsinline id="bg-video">
+        <video autoplay muted loop playsinline preload="auto" id="bg-video">
             <source src="websiteBackground.mp4" type="video/mp4">
         </video>
         
@@ -82,12 +82,102 @@
 
         <section id="projects" class="page-section">
             <h2>Projects</h2>
+
+            <div class="projects-grid" id="projectsGrid">
+
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <h3 class="project-title">Sleep Tracker</h3>
+                            <span class="project-icon">🌙</span>
+                        </div>
+                        <span class="project-date">November 2025</span>
+                    </div>
+                    <ul class="project-bullets">
+                        <li>Developed an application to log sleep duration, pre-bedtime activities, and dream entries to identify lifestyle trends.</li>
+                        <li>Designed a data-driven dashboard to visualize the correlation between daily habits and rest quality.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="project-tag">JavaScript,</span>
+                        <span class="project-tag">HTML,</span>
+                        <span class="project-tag">CSS</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <h3 class="project-title">Pomodoro Clock</h3>
+                            <span class="project-icon">⏱️</span>
+                        </div>
+                        <span class="project-date">September 2023</span>
+                    </div>
+                    <ul class="project-bullets">
+                        <li>Created a customizable countdown timer based on the Pomodoro Technique, with automated transitions between work and rest intervals.</li>
+                        <li>Developed a clean, intuitive interface to minimize distraction and enhance focus during productivity cycles.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="project-tag">JavaScript,</span>
+                        <span class="project-tag">HTML,</span>
+                        <span class="project-tag">CSS,</span>
+                    </div>
+                </article>
+            </div>
+
         </section>
 
-        <section id="experience"class="page-section">
+
+
+        <section id="experience" class="page-section">
             <h2>Experience</h2>
+            <div class="exp-wrap">
+                <div class="exp-timeline" id="experienceTimeline">
+
+
+                    <article class="exp-item">
+                        <div class="exp-top">
+                            <h3 class="exp-role">Team Member — <span class="exp-company">Menchies Frozen Yogurt</span></h3>
+                            <div class="exp-meta">Toronto, ON • Oct 2023 – Present</div>
+                        </div>
+                        <ul class="exp-bullets">
+                            <li>Explained pricing, products, and loyalty programs to a diverse customer base.</li>
+                            <li>Handled customer complaints and POS issues calmly and professionally.</li>
+                            <li>Balanced high-volume rush transactions while maintaining cleanliness and inventory.</li>
+                        </ul>
+                        <div class="exp-tags">
+                            <span class="exp-tag">Customer Service,</span>
+                            <span class="exp-tag">POS Systems,</span>
+                            <span class="exp-tag">De-escalation,</span>
+                            <span class="exp-tag">Teamwork</span>
+                        </div>
+                    </article>
+
+                    <article class="exp-item">
+                        <div class="exp-top">
+                            <h3 class="exp-role">Head Staff — <span class="exp-company">Leaside Baseball Camp</span></h3>
+                            <div class="exp-meta">Toronto, ON • Jun 2019 – Aug 2023</div>
+                        </div>
+                        <ul class="exp-bullets">
+                            <li>Supervised and mentored 10+ counselors to run drills, clinics, and activities.</li>
+                            <li>Managed daily interactions with parents and provided updates on progress/logistics.</li>
+                            <li>Enforced equipment standards and safety protocols for campers and staff.</li>
+                        </ul>
+                        <div class="exp-tags">
+                            <span class="exp-tag">Leadership,</span>
+                            <span class="exp-tag">Coaching,</span>
+                            <span class="exp-tag">Operations,</span>
+                            <span class="exp-tag">Safety</span>
+                        </div>
+                    </article>
+
+                
+                </div>
+            </div>
         </section>
 
+
+        
         <section id="connect"class="page-section">
             <h2>Connect</h2>
             
@@ -97,7 +187,7 @@
                     <i class="fab fa-instagram"></i>
                     <span> @colinshier</span>
                 </a>
-                <a href="https://www.linkedin.com/in/colin-shier-bb64303a4/ target="_blank" class="social-card linkedin">
+                <a href="https://www.linkedin.com/in/colin-shier-bb64303a4/" target="_blank" class="social-card linkedin">
                     <i class="fab fa-linkedin"></i>
                     <span>Colin Shier</span>
                 </a>
