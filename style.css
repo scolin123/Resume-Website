@@ -197,7 +197,7 @@ body.allow-scroll #MainContent {
 .page-section{
     display: flex;
     width: 100%;
-    height: calc(100vh - 50px);
+    height: auto;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -488,6 +488,7 @@ h1{
 /*Connect*/
 #connect{
     min-height: 20vh;
+    padding-bottom: 200px;
 }
 .social-container{
     display: flex;
