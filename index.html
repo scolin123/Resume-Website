@@ -83,47 +83,124 @@
         <section id="projects" class="page-section">
             <h2>Projects</h2>
 
-            <div class="projects-grid" id="projectsGrid">
-
+            <div class="projects-timeline" id="projectsGrid">
 
                 <article class="project-card">
-                    <div class="project-header">
-                        <div style="display:flex;align-items:center;gap:10px;">
-                            <h3 class="project-title">Sleep Tracker</h3>
-                            <span class="project-icon">🌙</span>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-body">
+                        <div class="project-header">
+                            <div style="display:flex;align-items:center;gap:10px;">
+                                <h3 class="project-title">Subject</h3>
+                                
+                            </div>
+                            <span class="project-date">2026</span>
                         </div>
-                        <span class="project-date">November 2025</span>
-                    </div>
-                    <ul class="project-bullets">
-                        <li>Engineered a multi-view logging interface using JavaScript-driven DOM manipulation to transition seamlessly between secure login screens and user dashboards.</li>
-                        <li>Designed a data-driven dashboard to visualize the correlation between daily habits and rest quality.</li>
-                        <li>Implemented a persistent state management system to handle dynamic form submissions, date-stamping, and multi-line descriptive entries for habit tracking.</li>
-                    </ul>
-                    <div class="project-tags">
-                        <span class="project-tag">JavaScript</span>
-                        <span class="project-tag">HTML</span>
-                        <span class="project-tag">CSS</span>
+                        <ul class="project-bullets">
+                            <li>Designed and built a browser-based noir investigation game in vanilla HTML/CSS/JS where players audit fragmented memories to determine if a subject is human or synthetic.</li>
+                            <li>Architected a branching narrative system across 5 cases and 40 unique endings, with state-driven fragment unlocking and dossier-style case-file management.</li>
+                            <li>Crafted an immersive noir UI with atmospheric styling and a twist ending mechanic that subverts player expectations.</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                        </div>
                     </div>
                 </article>
 
                 <article class="project-card">
-                    <div class="project-header">
-                        <div style="display:flex;align-items:center;gap:10px;">
-                            <h3 class="project-title">Pomodoro Clock</h3>
-                            <span class="project-icon">⏱️</span>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-body">
+                        <div class="project-header">
+                            <div style="display:flex;align-items:center;gap:10px;">
+                                <h3 class="project-title">InsideLine</h3>
+                                
+                            </div>
+                            <span class="project-date">November 2025 — In Development</span>
                         </div>
-                        <span class="project-date">September 2023</span>
+                        <ul class="project-bullets">
+                            <li>Building a quantitative sports modeling pipeline using XGBoost and LightGBM to identify +EV (Expected Value) opportunities across NBA and MLB betting markets.</li>
+                            <li>Integrated live odds via The-Odds-API and real-time game data through NBA_API and MLB-StatsAPI to drive model inputs with up-to-date market context.</li>
+                            <li>Engineered a backtesting system and automated Streamlit grading dashboard to evaluate model performance and track bet outcomes over time.</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">XGBoost</span>
+                            <span class="project-tag">LightGBM</span>
+                            <span class="project-tag">Pandas</span>
+                            <span class="project-tag">Supabase</span>
+                        </div>
                     </div>
-                    <ul class="project-bullets">
-                        <li>Engineered a high-precision productivity timer using JavaScript intervals with automated state management for Focus, Short Break, and Long Break cycles.</li>
-                        <li>Developed a clean, intuitive interface to minimize distraction and enhance focus during productivity cycles.</li>
-                        <li>Developed a dynamic SVG progress ring that visually tracks elapsed time by calculating and updating stroke-dashoffset in real-time.</li>
-                        <li>Implemented global keyboard listeners and persistent session tracking to monitor and display the total number of completed focus intervals.</li>
-                    </ul>
-                    <div class="project-tags">
-                        <span class="project-tag">JavaScript</span>
-                        <span class="project-tag">HTML</span>
-                        <span class="project-tag">CSS</span>
+                </article>
+
+                <article class="project-card">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-body">
+                        <div class="project-header">
+                            <div style="display:flex;align-items:center;gap:10px;">
+                                <h3 class="project-title">WhatsTheMotive</h3>
+                                
+                            </div>
+                            <span class="project-date">December 2025</span>
+                        </div>
+                        <ul class="project-bullets">
+                            <li>Developed a real-time collaborative decision-making web app using Flask and Supabase, enabling groups to create rooms, submit suggestions, and rank-vote using Borda Count or Instant Runoff algorithms.</li>
+                            <li>Integrated the Gemini AI API to auto-generate context-aware descriptions for each suggestion, surfaced during the voting phase to inform voter decisions.</li>
+                            <li>Built a phase-driven state machine (lobby → suggesting → voting → results) with geolocation-based room discovery, avatar selection, and profanity filtering.</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Flask</span>
+                            <span class="project-tag">Supabase</span>
+                            <span class="project-tag">Gemini AI</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-body">
+                        <div class="project-header">
+                            <div style="display:flex;align-items:center;gap:10px;">
+                                <h3 class="project-title">Sleep Tracker</h3>
+                                
+                            </div>
+                            <span class="project-date">November 2023</span>
+                        </div>
+                        <ul class="project-bullets">
+                            <li>Engineered a multi-view logging interface using JavaScript-driven DOM manipulation to transition seamlessly between secure login screens and user dashboards.</li>
+                            <li>Designed a data-driven dashboard to visualize the correlation between daily habits and rest quality.</li>
+                            <li>Implemented a persistent state management system to handle dynamic form submissions, date-stamping, and multi-line descriptive entries for habit tracking.</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-body">
+                        <div class="project-header">
+                            <div style="display:flex;align-items:center;gap:10px;">
+                                <h3 class="project-title">Pomodoro Clock</h3>
+                                
+                            </div>
+                            <span class="project-date">September 2023</span>
+                        </div>
+                        <ul class="project-bullets">
+                            <li>Engineered a high-precision productivity timer using JavaScript intervals with automated state management for Focus, Short Break, and Long Break cycles.</li>
+                            <li>Developed a clean, intuitive interface to minimize distraction and enhance focus during productivity cycles.</li>
+                            <li>Developed a dynamic SVG progress ring that visually tracks elapsed time by calculating and updating stroke-dashoffset in real-time.</li>
+                            <li>Implemented global keyboard listeners and persistent session tracking to monitor and display the total number of completed focus intervals.</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                        </div>
                     </div>
                 </article>
             </div>
@@ -139,38 +216,32 @@
 
 
                     <article class="exp-item">
-                        <div class="exp-top">
-                            <h3 class="exp-role">Team Member — <span class="exp-company">Menchies Frozen Yogurt</span></h3>
-                            <div class="exp-meta">Toronto, ON • Oct 2023 – Present</div>
+                        <div class="exp-left">
+                            <div class="exp-company">Menchies Frozen Yogurt</div>
+                            <div class="exp-role">Team Member</div>
+                            <div class="exp-meta">Toronto, ON<br>Oct 2023 – Present</div>
                         </div>
-                        <ul class="exp-bullets">
-                            <li>Explained pricing, products, and loyalty programs to a diverse customer base.</li>
-                            <li>Handled customer complaints and POS issues calmly and professionally.</li>
-                            <li>Balanced high-volume rush transactions while maintaining cleanliness and inventory.</li>
-                        </ul>
-                        <div class="exp-tags">
-                            <span class="exp-tag">Customer Service</span>
-                            <span class="exp-tag">POS Systems</span>
-                            <span class="exp-tag">De-escalation</span>
-                            <span class="exp-tag">Teamwork</span>
+                        <div class="exp-right">
+                            <ul class="exp-bullets">
+                                <li>Explained pricing, products, and loyalty programs to a diverse customer base.</li>
+                                <li>Handled customer complaints and POS issues calmly and professionally.</li>
+                                <li>Balanced high-volume rush transactions while maintaining cleanliness and inventory.</li>
+                            </ul>
                         </div>
                     </article>
 
                     <article class="exp-item">
-                        <div class="exp-top">
-                            <h3 class="exp-role">Head Staff — <span class="exp-company">Leaside Baseball Camp</span></h3>
-                            <div class="exp-meta">Toronto, ON • Jun 2019 – Aug 2023</div>
+                        <div class="exp-left">
+                            <div class="exp-company">Leaside Baseball Camp</div>
+                            <div class="exp-role">Head Staff</div>
+                            <div class="exp-meta">Toronto, ON<br>Jun 2019 – Aug 2023</div>
                         </div>
-                        <ul class="exp-bullets">
-                            <li>Supervised and mentored 10+ counselors to run drills, clinics, and activities.</li>
-                            <li>Managed daily interactions with parents and provided updates on progress/logistics.</li>
-                            <li>Enforced equipment standards and safety protocols for campers and staff.</li>
-                        </ul>
-                        <div class="exp-tags">
-                            <span class="exp-tag">Leadership</span>
-                            <span class="exp-tag">Coaching</span>
-                            <span class="exp-tag">Operations</span>
-                            <span class="exp-tag">Safety</span>
+                        <div class="exp-right">
+                            <ul class="exp-bullets">
+                                <li>Supervised and mentored 10+ counselors to run drills, clinics, and activities.</li>
+                                <li>Managed daily interactions with parents and provided updates on progress/logistics.</li>
+                                <li>Enforced equipment standards and safety protocols for campers and staff.</li>
+                            </ul>
                         </div>
                     </article>
 
@@ -201,6 +272,10 @@
                 <a href="https://gitlab.com/cshier" target="_blank" class="social-card gitlab">
                     <i class="fab fa-gitlab"></i>
                     <span>Repository</span>
+                </a>
+                <a href="colin-shier-resume.pdf" download class="social-card resume">
+                    <i class="fas fa-download"></i>
+                    <span>Resume</span>
                 </a>
             </div>
         </section>
