@@ -275,32 +275,37 @@ body.allow-scroll #MainContent {
 
 /*Projects*/
 
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 24px;
+.projects-timeline {
+    position: relative;
     width: 90%;
-    max-width: 1000px;
-    padding: 0 20px 40px;
+    max-width: 800px;
+    padding-left: 32px;
+    padding-bottom: 40px;
+}
+
+.projects-timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    bottom: 0;
+    width: 2px;
+    background: #999;
 }
 
 .project-card {
-    background: rgba(0, 0, 0, 0.55);
-    border: 1px solid rgba(0, 123, 255, 0.25);
-    border-radius: 16px;
-    padding: 24px;
-    backdrop-filter: blur(10px);
-    color: white;
+    position: relative;
+    background: none;
+    border: none;
+    border-radius: 0;
+    backdrop-filter: none;
+    box-shadow: none;
+    padding: 0 0 40px 0;
+    color: #1a1a1a;
 
-    /* Animation initial state */
     opacity: 0;
-    transform: translateX(-60px);
-    transition: opacity 0.6s ease, transform 0.6s ease,
-                box-shadow 0.3s ease, border-color 0.3s ease;
-}
-
-.project-card:nth-child(even) {
-    transform: translateX(60px);
+    transform: translateX(-30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 .project-card.animate-in {
@@ -312,41 +317,45 @@ body.allow-scroll #MainContent {
     transition-delay: 0.15s;
 }
 
-.project-card:hover {
-    box-shadow: 0 0 30px rgba(0, 123, 255, 0.35);
-    border-color: rgba(0, 123, 255, 0.6);
-    transform: translateY(-4px) !important;
+.project-card:hover .timeline-dot {
+    background: #1a6cc4;
+}
+
+.project-card:hover .project-title {
+    color: #1a6cc4;
 }
 
 .project-header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .project-title {
     margin: 0;
     font-size: 1.1rem;
-    color: #007bff;
+    font-weight: 700;
+    color: #1a1a1a;
+    transition: color 0.2s ease;
 }
 
 .project-icon {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
 }
 
 .project-date {
     font-size: 0.8rem;
-    color: rgba(255,255,255,0.5);
+    color: #666;
     white-space: nowrap;
 }
 
 .project-bullets {
-    color: rgba(255,255,255,0.8);
+    color: #333;
     font-size: 0.9rem;
     line-height: 1.7;
     padding-left: 18px;
-    margin: 0 0 14px;
+    margin: 0 0 12px;
 }
 
 .project-tags {
@@ -356,15 +365,15 @@ body.allow-scroll #MainContent {
 }
 
 .project-tag {
-    background: rgba(0, 123, 255, 0.2);
-    color: #6ab0ff;
+    background: #e8e6e0;
+    color: #555;
     font-size: 0.75rem;
-    padding: 3px 10px;
-    border-radius: 20px;
-    border: 1px solid rgba(0, 123, 255, 0.3);
+    padding: 2px 8px;
+    border-radius: 2px;
+    border: none;
 }
 
-/*Experience Timeline*/
+/*Experience Two-Column*/
 
 .exp-wrap {
     width: 90%;
@@ -374,28 +383,31 @@ body.allow-scroll #MainContent {
 .exp-timeline {
     display: flex;
     flex-direction: column;
-    gap: 20px;
     padding-bottom: 40px;
 }
 
-.exp-item {
-    background: rgba(0,0,0,0.55);
-    border: 1px solid rgba(0, 123, 255, 0.2);
-    border-left: 3px solid #007bff;
-    border-radius: 12px;
-    padding: 20px 24px;
-    color: black;
-    backdrop-filter: blur(10px);
-
-    /* Animation initial state */
-    opacity: 0;
-    transform: translateX(-70px);
-    transition: opacity 0.65s ease, transform 0.65s ease,
-                box-shadow 0.3s ease, border-color 0.3s ease;
+.exp-timeline::before {
+    display: none;
 }
 
-.exp-item:nth-child(2) {
-    transform: translateX(70px);
+.exp-item {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 32px;
+    padding: 28px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    background: none;
+    border-radius: 0;
+    backdrop-filter: none;
+    box-shadow: none;
+
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.exp-item:first-child {
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 .exp-item.animate-in {
@@ -407,33 +419,35 @@ body.allow-scroll #MainContent {
     transition-delay: 0.15s;
 }
 
-.exp-item:hover {
-    box-shadow: 0 0 25px rgba(0, 123, 255, 0.3);
-    border-left-color: #66aaff;
-    transform: translateY(-4px);
-}
-
-.exp-top {
-    margin-bottom: 10px;
-}
-
-.exp-role {
-    margin: 0 0 4px;
-    font-size: 1rem;
-    color: white;
+.exp-left {
+    padding-top: 2px;
 }
 
 .exp-company {
-    color: #007bff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 4px;
+}
+
+.exp-role {
+    font-size: 0.85rem;
+    color: #4a90d9;
+    margin-bottom: 6px;
 }
 
 .exp-meta {
-    font-size: 0.8rem;
-    color: rgba(255,255,255,0.5);
+    font-size: 0.78rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+.exp-right {
+    /* content side */
 }
 
 .exp-bullets {
-    color: rgba(255,255,255,0.8);
+    color: #333;
     font-size: 0.9rem;
     line-height: 1.7;
     padding-left: 18px;
@@ -447,12 +461,12 @@ body.allow-scroll #MainContent {
 }
 
 .exp-tag {
-    background: rgba(0, 123, 255, 0.15);
-    color: #6ab0ff;
+    background: #e2e8f4;
+    color: #4a6da8;
     font-size: 0.75rem;
-    padding: 3px 10px;
-    border-radius: 20px;
-    border: 1px solid rgba(0, 123, 255, 0.25);
+    padding: 2px 8px;
+    border-radius: 2px;
+    border: none;
 }
 
 .allow-scroll #MainContent{
@@ -539,6 +553,7 @@ h1{
 .linkedin:hover{background: #0077B5}
 .gmail:hover{background: #D44638}
 .gitlab:hover{background: #FC6D26;}
+.resume:hover{background: #1a1a1a;}
 
 html{
     scroll-behavior: smooth;
@@ -558,13 +573,39 @@ a{
 
 }
 
+/* Shared timeline dot */
+.timeline-dot {
+    position: absolute;
+    left: -36px;
+    top: 6px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #4a90d9;
+    border: 2px solid transparent;
+    transition: background 0.2s ease;
+    z-index: 1;
+}
+
+/* Section backgrounds */
+#projects {
+    background: transparent;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+#experience {
+    background: transparent;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
 #projects, #experience{
     min-height: 80vh;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    scroll-margin-top:0 ;
-    
+    scroll-margin-top: 0;
 }
