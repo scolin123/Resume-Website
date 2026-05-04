@@ -373,6 +373,59 @@ body.allow-scroll #MainContent {
     border: none;
 }
 
+/*Skills*/
+
+#skills {
+    background: transparent;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    min-height: auto;
+}
+
+.skills-grid {
+    width: 90%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding-bottom: 40px;
+}
+
+.skill-group {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 32px;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.skill-group:first-child {
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.skill-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding-top: 3px;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-tag {
+    background: #e8e6e0;
+    color: #333;
+    font-size: 0.8rem;
+    padding: 4px 12px;
+    border-radius: 2px;
+}
+
 /*Experience Two-Column*/
 
 .exp-wrap {
